@@ -1,0 +1,238 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background:#121212;
+}
+
+[page="charity"] {
+    overflow-x: visible;
+}
+
+.bar {
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    display: table;
+    padding-right: 100px;
+}
+
+.bar a {
+    display: table-cell;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 400ms;
+    text-decoration: none;
+}
+
+.bar .logo {
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bar a:not(.logo):not(.selected):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bar .selected {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bar .selected:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+h1 {
+    font-size: 100px;
+    width: 730px;
+    display: inline;
+}
+
+p { 
+    font-size: 20px;
+    width: 730px;
+    line-height: 35px;
+}
+
+.description p {
+    margin-top: 20px;
+}
+
+.blue {
+    color: #38b6ff;
+}
+
+.curve {
+    width: 1920px;
+    height: 1080px;
+    background-image: url("curve.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.description .discover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 100px;
+    padding: 20px 50px;
+    background-color: #ff3131;
+    font-size: 25px;
+    transition: box-shadow 400ms;
+    text-decoration: none;
+}
+
+.description .discover:hover {
+    box-shadow: #ff3131 0px 8px 24px;
+}
+
+[page="about"] .description,
+[page="contact-us"] .description {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+[page="contact-us"] .description p {
+    margin-left: 30px;
+    line-height: 50px;
+}
+
+[page="about"] .description p {
+    margin-left: 30px;
+    width: 360px;
+    line-height: 40px;
+}
+
+[page="contact-us"] .description .logo {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.collection {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    text-align: center;
+}
+
+.collection .box {
+    display: inline-block;
+    width: 20%;
+    margin: 0px 20px;
+    transition: box-shadow 200ms;
+}
+
+.collection .box:hover{
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 8px 24px;
+}
+
+.collection .box img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.collection .box .text,
+.collection .box .price {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0px;
+    background-color: white;
+    color: black;
+}
+
+
+.terms {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+[page="charity"] img {
+    position: absolute;
+    bottom : 50px;
+    height: 200px;
+}
+
+.unicef {
+    left: 50px;
+}
+
+.unicef_text {
+    position: absolute;
+    bottom : 50px;
+    width: 300px;
+    height: 200px;
+    left: 280px;
+}
+
+.bill {
+    left: 600px;
+}
+
+.bill_text {
+    position: absolute;
+    bottom : 50px;
+    width: 350px;
+    height: 200px;
+    left: 1200px;
+}
+
+.icon {
+    left: 50%;
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+.icon img {
+    width: 50px;
+    margin: 10px;
+}
